@@ -79,6 +79,9 @@ a {
 	margin: 0;
 	font-weight: 700;
 }
+.header__title a {
+	color: white;
+}
 .header__subtitle {
 	font-size: 20px;
 	padding-top: 2px;
