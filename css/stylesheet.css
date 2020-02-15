@@ -108,6 +108,19 @@ a {
 	position: relative;
 	color: #fff;
 }
+.menu__title-selected {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-indent: -0.05em;
+	margin: 0;
+	position: relative;
+	color: #fff;
+	background-color: #dfb14f;
+	padding: 0 5px;
+}
 
 
 /* CONTENT */
@@ -185,6 +198,23 @@ a {
 	grid-template-areas:	"image";
 	grid-template-columns: 60%;
 }
+.content--layout-5 {
+	grid-template-areas:	"title ... desc"
+							"title ... list"
+							"title ... list"
+							"... ... rsv";
+	grid-template-columns: 15% 5% 40%;
+	text-align: left;
+	overflow-wrap: break-word;
+}
+.content--layout-6 {
+	grid-template-areas:	"title"
+							"desc"
+							"image";
+	grid-template-columns: 60%;
+	text-align: left;
+	overflow-wrap: break-word;
+}
 .content__title {
 	grid-area: title;
 	font-family: 'nexa_boldregular', sans-serif;
@@ -238,7 +268,33 @@ a {
 	padding-top: 40px;
 	line-height: 28px;
 }
-
+.content__list {
+	grid-area: list;
+	margin: 0;
+	z-index: 10;
+	cursor: default;
+	font-size: 18px;
+	line-height: 28px;
+	padding-top: 28px;
+	padding-inline-start: 25px;
+}
+.content__rsv {
+	grid-area: rsv;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	text-indent: -0.05em;
+	margin: 0;
+	position: relative;
+	color: #fff;
+	background-color: transparent;
+	padding: 0 5px;
+	border: 3px solid #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin-top: 30px;
+}
 
 /* progra */
 

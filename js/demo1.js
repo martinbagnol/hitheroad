@@ -19,7 +19,7 @@
 		return a;
 	};
 
-	// from http://www.quirksmode.org/js/events_properties.html#position
+// from http://www.quirksmode.org/js/events_properties.html#position
 	const getMousePos = function(ev) {
 		let posx = 0;
 		let posy = 0;
