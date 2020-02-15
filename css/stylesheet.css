@@ -168,7 +168,7 @@ a {
 	pointer-events: auto;
 	justify-content: center;
 	align-content: center;
-	grid-template-columns: 30% 30%; 
+	grid-template-columns: 30vw 30vw; 
 	grid-template-areas:	"title title"
 							"quote quote"
 							"desc desc"
@@ -179,7 +179,7 @@ a {
 	grid-template-areas:	"title"
 							"subtitle"
 							"slogan";
-	grid-template-columns: 100%;
+	grid-template-columns: 100vw;
 	align-content: center;
 	text-align: center;
 	overflow-wrap: break-word;
@@ -190,20 +190,20 @@ a {
 							"... ... desc"
 							"... ... ..."
 							"quote quote quote";
-	grid-template-columns: 25% 5% 30%;
+	grid-template-columns: 25vw 5vw 30vw;
 	text-align: left;
 	overflow-wrap: break-word;
 }
 .content--layout-4 {
 	grid-template-areas:	"image";
-	grid-template-columns: 60%;
+	grid-template-columns: 60vw;
 }
 .content--layout-5 {
 	grid-template-areas:	"title ... desc"
 							"title ... list"
 							"title ... list"
 							"... ... rsv";
-	grid-template-columns: 15% 5% 40%;
+	grid-template-columns: 15vw 5vw 40vw;
 	text-align: left;
 	overflow-wrap: break-word;
 }
@@ -211,7 +211,7 @@ a {
 	grid-template-areas:	"title"
 							"desc"
 							"image";
-	grid-template-columns: 60%;
+	grid-template-columns: 60vw;
 	text-align: left;
 	overflow-wrap: break-word;
 }
