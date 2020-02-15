@@ -137,6 +137,17 @@ a {
 	pointer-events: none;
 	vertical-align: middle;
 }
+.content-wrap-2 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	pointer-events: none;
+	vertical-align: middle;
+	margin-bottom: 150px;
+}
 .content {
 	position: relative;
 	display: grid;
@@ -343,6 +354,23 @@ a {
 .content__progra-item:focus .content__progra-infos {
 	opacity: 1;
 }
+.footer__container {
+  	width: 60vw;
+	display: inline-flex;
+	margin: 50px calc(20vw + 5px);
+	position: relative;
+}
+.footer__container a {
+  	display: block
+}
+.footer__container-contact {
+  	vertical-align: top;
+}
+.footer__container-partenaires {
+  	vertical-align: top;
+  	padding-left: 10vw;
+}
+
 
 
 
