@@ -369,7 +369,13 @@ a {
 .footer__container-partenaires {
   	vertical-align: top;
   	padding-left: 10vw;
+  	display: inline-block;
 }
+.footer__container-partenaires img {
+  	width: 5vw;
+  	padding-right: 10px;
+}
+
 
 
 
