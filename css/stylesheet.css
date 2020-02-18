@@ -349,7 +349,7 @@ a {
 .content__progra-infos {
 	position: absolute;
 	top: 0;
-	background-color: rgba(197, 155, 206, .7);
+	background-color: rgba(197, 155, 206, .8);
 	color: white;
 	opacity: 0;
 	transition: opacity .3s, visibility .3s;
@@ -358,11 +358,8 @@ a {
 	height: calc(100% - 4px);
 	text-align: center;
 }
-.content__progra-desc {
-	font-size: 1em;
-	margin: 0;
-	max-width: 20vw;
-	color: white;
+.content__progra-name {
+	padding-top: 25%;
 }
 .content__progra-date {
 	position: absolute;
@@ -409,7 +406,7 @@ a {
 
 
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 540px) {
 	.menu {
 		text-align: right;
 		top: 0;
@@ -441,34 +438,50 @@ a {
 	padding: 1em;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 900px) {
 
-	.content--layout {
+
+.content--layout {
 	grid-template-columns: 45% 45%;
-	} 
-
-	.content--layout-3 {
-		grid-template-columns: 30% 5% 60%;
-	}
-
-	.content--fixed {
-		height: auto;
-		min-height: 0;
-		display: block;
-		z-index: 1000;
-		position: absolute;
-	}
-	.header {
-		align-items: center;
-		flex-direction: column;
-	}
+} 
+.content--layout-2 {
+	grid-template-columns: 90vw;
+} 
+.content--layout-3 {
+	grid-template-columns: 30% 5% 60%;
+}
+.content--layout-4 {
+	grid-template-columns: 90vw;
+}
+.content--layout-5 {
+	grid-template-columns: 35vw 5vw 50vw;
+}
+.content--layout-6 {
+	grid-template-columns: 90vw;
+}
+.content--fixed {
+	height: auto;
+	min-height: 0;
+	display: block;
+	z-index: 1000;
+	position: absolute;
+}
+.header {
+	align-items: center;
+	flex-direction: column;
+}
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 640px) {
+}
+
+/*
+
 	.content--layout {
 		transform: scale3d(0.8,0.8,1);
 	}
 }
+
 
 @media screen and (max-width: 36em) {
 	.content--layout {
