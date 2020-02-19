@@ -453,12 +453,11 @@ a {
 	} 
 	.content--layout-2 {
 		grid-template-columns: 90vw;
-		grid-template-areas:"subtitle"
+		margin-top: 50vh;
+		grid-template-areas:"title"
+							"subtitle"
 							"slogan";
 	} 
-	.content--layout-2 .content__title { 
-		display: none; 
-	}
 	.content--layout-3 {
 		grid-template-columns: 90vw;
 		grid-template-areas:"title"
@@ -485,6 +484,10 @@ a {
 	}
 	.content__title {
 		font-size: 40px;
+		line-height: 40px;
+	}
+	.content__slogan {
+		font-size: 30px;
 		line-height: 40px;
 	}
 	.content__desc {
@@ -526,6 +529,9 @@ a {
 }
 
 @media screen and (max-width: 640px) {
+	.content--layout-2 .content__title { 
+		display: none; 
+	}
 	.header {
 		align-items: center;
 	}
