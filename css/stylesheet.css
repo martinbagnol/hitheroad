@@ -491,9 +491,18 @@ a {
   		width: 90vw;
 		margin-left: 5vw;
 	}
+	.content__progra-infos {
+		background-color: transparent;
+		opacity: 1;
+		width: 100%;
+		left: 0;
+	}
 	.content__progra-img {
 		width: 90vw;
 		padding: 0;
+	}
+	.content__progra-title {
+		font-size: 40px;
 	}
 	.footer__container {
 	  	width: 90vw;
@@ -504,6 +513,9 @@ a {
 	.footer__container-partenaires {
 	  	padding-left: 0;
 	}
+	.footer__container-partenaires img {
+  	width: 10vw;
+  	}
 }
 
 @media screen and (max-width: 640px) {
