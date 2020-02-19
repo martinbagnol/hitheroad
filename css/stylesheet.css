@@ -482,6 +482,15 @@ a {
 		width: 90vw;
 		padding: 0;
 	}
+	.footer__container {
+	  	width: 90vw;
+	  	margin: 0;
+	  	display: block;
+	  	margin: 5vw;
+	}
+	.footer__container-partenaires {
+	  	padding-left: 0;
+	}
 }
 
 @media screen and (max-width: 640px) {
