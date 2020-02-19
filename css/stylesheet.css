@@ -85,7 +85,6 @@ a {
 	font-weight: 500;
 }
 .menu {
-	position: fixed;
 	bottom: 0;
 	right: 0;
 	width: 100%;
@@ -95,6 +94,8 @@ a {
 	margin: 0.75em 0 0;
 	background-color: #dfb14f;
 	font-family: 'nexa_boldregular', sans-serif;
+	height: 50px;
+	position: absolute;
 }
 .menu,
 .menu:hover {
@@ -109,10 +110,11 @@ a {
 	margin: 0;
 	position: relative;
 	color: #fff;
+	padding: 0 5px;
 }
 .menu__title-selected {
 	display: inline-block;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 500;
 	letter-spacing: 0.05em;
 	text-indent: -0.05em;
@@ -122,7 +124,7 @@ a {
 	background-color: #dfb14f;
 	padding: 0 5px;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 640px) {
 	.menu {
 		text-align: right;
 		top: 0;
@@ -132,9 +134,13 @@ a {
 		display: block;
 		background: transparent;
 		margin: 40px 40px 0 0;
+		height: auto;
 	}
 	.menu__title {
 		display: block;
+		font-size: 24px;
+	}
+	.menu__title-selected {
 		font-size: 24px;
 	}
 }
@@ -461,14 +467,6 @@ a {
 	.content--layout-6 {
 		grid-template-columns: 90vw;
 	}
-	.content__title {
-		font-size: 40px;
-		line-height: 40px;
-	}
-	.content__desc {
-		font-size: 18px;
-		line-height: 22px;
-	}
 	.content--fixed {
 		height: auto;
 		min-height: 0;
@@ -476,11 +474,15 @@ a {
 		position: absolute;
 	}
 	.header {
-		align-items: center;
 		flex-direction: column;
 	}
-	.header__title {
-		padding-right: 0;
+	.content__title {
+		font-size: 40px;
+		line-height: 40px;
+	}
+	.content__desc {
+		font-size: 18px;
+		line-height: 22px;
 	}
 	.content-wrap {
 		min-height: 300px;
@@ -517,6 +519,12 @@ a {
 }
 
 @media screen and (max-width: 640px) {
+	.header {
+		align-items: center;
+	}
+	.header__title {
+		padding-right: 0;
+	}
 
 }
 
