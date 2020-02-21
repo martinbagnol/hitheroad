@@ -21,25 +21,25 @@
 				<header class="header">
 					<h1 class="header__title"><a href="index.html">HIT THE ROAD 2020</a></h1>
 					<h1 class="header__subtitle">30 mai - 1er juin</h1>
+					<h4 class="header__slogan">—  concerts & autostop  —</h4>
 				</header>
 			
 				<div class="menu">
 					<a href="billetterie.html"><h4 class="menu__title">Billetterie</h4></a>
-					<a href="#progra"><h4 class="menu__title">Programmation</h4></a>
+					<a href="#progra" class="scroll"><h4 class="menu__title">Programmation</h4></a>
 				</div>
 
 			</div>
-			<div class="content-wrap">
+			<div class="content-wrap summit">
 				<div class="content content--layout content--layout-2">
-					<h3 class="content__title">HIT THE ROAD 2020</h3>
+					<h3 class="content__maintitle">HIT THE ROAD 2020</h3>
 					<h4 class="content__subtitle">—  concerts & autostop  —</h4>
 					<h4 class="content__slogan">La virée mélodieuse de l'année</h4>
 				</div>
 			</div>
 
-			<div class="content-wrap">
+			<div class="content-wrap summit2">
 				<div class="content content--layout content--layout">
-					
 					<h3 class="content__title">Un festival déroutant</h3>
 					<p class="content__desc">Hit the Road, c’est une aventure musicale éco-responsable où les participants se rendent en autostop. C’est un évènement 100% associatif et à but non-lucratif. A l’affiche : voyages inattendus, concerts éclectiques, conférences inspirantes et délices bios et locaux !</p>
 					<img class="content__image" src="img/banner-1.jpg" style="padding-top: 60px">
@@ -63,7 +63,7 @@
 			<div class="content-wrap">
 				<div class="content content--layout content--layout-3">
 					<h3 class="content__title">Tous les chemins mènent en Auvergne</h3>
-					<p class="content__desc" style="padding-top: 0">A 4h30 de Paris, 4h de Montpellier, 2h30 de Lyon, 2h30 de Bordeaux et 40 min de Clermont-Ferrand, Hit the Road 2020 plante sa tente au <a href="https://www.domainedubalbuzard.com/ " target="blank">domaine du Balbuzard</a>, à Condat-en-Combrailles.<br><br>Les lumières colorées d’enivrantes soirées se reflètent sur le lac scintillant au milieu des champs. Ce paysage verdoyant se met en scène en devenant piste de danse et espace d’échange pour un week-end hors du temps !</p>
+					<p class="content__desc">A 4h30 de Paris, 4h de Montpellier, 2h30 de Lyon, 2h30 de Bordeaux et 40 min de Clermont-Ferrand, Hit the Road 2020 plante sa tente au <a href="https://www.domainedubalbuzard.com/ " target="blank">domaine du Balbuzard</a>, à Condat-en-Combrailles.<br><br>Les lumières colorées d’enivrantes soirées se reflètent sur le lac scintillant au milieu des champs. Ce paysage verdoyant se met en scène en devenant piste de danse et espace d’échange pour un week-end hors du temps !</p>
 					<h3 class="content__quote">« <i>Hit the Road, c’est une utopie qui se réalise </i>»<br>— un admirateur secret</h3>
 				</div>
 			</div>
@@ -175,5 +175,20 @@
 		<script src="js/anime.min.js"></script>
 		<script src="js/scrollMonitor.js"></script>
 		<script src="js/demo1.js"></script>
+		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script>
+				$(function() {
+		  		$('a[href*=#]:not([href=#])').click(function() {
+		    	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		     	var target = $(this.hash);
+		      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      	if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1200);
+		        return false;
+		      	}}});});
+		</script>
 	</body>
 </html>
