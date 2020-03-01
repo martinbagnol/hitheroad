@@ -567,6 +567,7 @@ a {
 	.content__progra-img {
 		width: 40vw;
 		padding: 0 2.5%;
+		filter: brightness(80%);
 	}
 	.content__progra-title {
 		font-size: 40px;
